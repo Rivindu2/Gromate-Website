@@ -1,10 +1,876 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
     <title>Gromate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+
+    </style>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <div class="logo">
+            <img src="assets/logo-white.png" alt="Gromate Logo" class="img-fluid" style="height: 35px; width: 200px;">
+        </div>
+        <nav>
+            <div>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">Project Scope <i
+                            class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#lit" class="w3-bar-item w3-button">Literature Survey</a>
+                        <a href="#gap" class="w3-bar-item w3-button">Research Gap</a>
+                        <a href="#problem" class="w3-bar-item w3-button">Research Problem</a>
+                        <a href="#obj" class="w3-bar-item w3-button">Research Objectives</a>
+                        <a href="#methdology" class="w3-bar-item w3-button">Methdology</a>
+                        <a href="#tech" class="w3-bar-item w3-button">Technologies</a>
+                    </div>
+                </div>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">Downloads <i
+                            class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#docs" class="w3-bar-item w3-button">Documents</a>
+                        <a href="#pres" class="w3-bar-item w3-button">Presentations</a>
+                    </div>
+                </div>
+                <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Us</a>
+            </div>
+        </nav>
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+            style="margin-top:46px">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+            <a href="#lit" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Literature Survey</a>
+            <a href="#gap" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Research Gap</a>
+            <a href="#problem" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Research
+                Problem</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+        </div>
+    </header>
+
+    <!-- Home section -->
+    <div class="home container-fluid text-center py-4" id="home">
+        <div class="container " style="height: 100%;">
+            <div class="row home-row">
+                <div class="col-left col-md-6">
+                    <div>
+                        <div class="home-left">Tomato Home Gardening Assistant</div>
+                        <div class="leanr-btn-div">
+                            <a href="#lit" class="home-learn-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- <img src="assets/giphy (4).gif" alt="GIF" /> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Literature Survey -->
+    <div class="lit container-fluid text-center lit" id="lit">
+        <div class="container " style="height: 100%;">
+            <!-- <div class="proj-title">Project Scope</div> -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="" style="width: 100%; height: auto;">
+                            <div class="proj-title">Literature Survey</div>
+                        </div>
+                        <!-- (2019) Statistics, country and market data & more | Tilasto. In: Factﬁsh.com. http://www.factﬁsh.com.Accessed15Sept2019  -->
+                        <div class=""
+                            style="width: 100%; height: auto; border: 3px solid #1b4444; border-radius: 10px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="assets/tomatoimg.png" style="width: 120px; height: 120px;"
+                                        alt="tomato production graph" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="lit-fact-box-txt">Tomato, a commercially valuable crop, is being grown in
+                                        various regions of Sri Lanka, including wet, dry, and intermediate zones.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lit-graph">
+                            <img src="assets/grapgh.png" alt="tomato production graph" class="img-fluid">
+                            <div class="caption">Tomato production growth in Sri Lanka</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" style="display: flex;justify-content: center;">
+
+                        <div class="lit-desc">
+                            <p>
+                                According to the HORDI Department of Agriculture, tomato is a significant crop in Sri
+                                Lanka
+                                that is grown in many agroclimatic zones except the up-country wet zones. And is an
+                                important cash crop with good potential for export. According to Foastat, tomato
+                                production
+                                in Sri Lanka peaked in 2018. Tomato production in Sri Lanka faced some challenges like a
+                                market glut, low profits pests & disease outbreaks.
+                                Apart from the climate, terrain, and animal-related damages. According to the Asian
+                                Farmers
+                                Association, dodamkumbura farmers sell 3,000 kilograms of tomatoes every day for a price
+                                set
+                                by traders which is often lower than it is for other vegetables. With how comparatively
+                                difficult it is to grow healthy tomatoes than it is for other vegetables sometimes
+                                farmers
+                                are not bothered to harvest tomatoes and leave them to decay.
+
+                            </p>
+                            <p>Defects in crops can be diagnosed using visual mediums via its roots, leaves, and stems.
+                                We
+                                can use these visual symptoms along with technology for a technology-assisted diagnosis.
+                                A
+                                few years ago, a plant disease diagnosis was developed using machine learning and image
+                                processing techniques to detect plant defects [2]. Traditionally this kind of diagnosis
+                                was
+                                done manually by experts who had either studied or had experience in farming or more
+                                accurate identification systems for diseases, like PCR-based molecular techniques, which
+                                have high popularity because of their high sensitivity and reproducibility [3]. An
+                                average
+                                planter would not satisfy either of the above. These technologies are useful because it
+                                would use data and information that experts know to provide faster diagnosis on a large
+                                scale.</p>
+
+                            <span class="references">
+                                <p style="font-weight: bold;">References</p>
+                                <p>
+                                    [2]. L. S. Puspha Annabel, T. Annapoorani and P. Deepalakshmi, "Machine Learning for
+                                    Plant
+                                    Leaf Disease Detection and Classification – A Review," 2019 International Conference
+                                    on
+                                    Communication and Signal Processing (ICCSP), Chennai, India, 2019, pp. 0538-0542,
+                                    doi:
+                                    10.1109/ICCSP.2019.8698004.
+                                </p>
+                                <p>
+                                    [3]. Balodi, Rekha, et al. "Plant disease diagnosis: technological advancements and
+                                    challenges." Indian Phytopathology 70.3 (2017): 275-281
+                                </p>
+
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Research Gap -->
+    <div class="container-fluid text-center  " id="gap">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="proj-title gap-title">Research Gap</div>
+                <div class="gap">
+                    <div class="text-center gap-item">
+                        <i class="fa fa-search" style="font-size: 55px; color: #1b4444;"></i>
+                        <p class="gap-txt-head">Identification and Classification of defect</p>
+                        <p class="gap-txt">User inputs will be meticulously analysed and deduced the root cause of the
+                            defect through a series of intricate processing stages. These subsequent analytical steps
+                            will
+                            assist in pinpointing the exact cause of the defect, allowing users to gain a thorough
+                            understanding of what went wrong. This in-depth analysis enables precise diagnosis. </p>
+                    </div>
+                    <div class="text-center gap-item">
+                        <i class="fa fa-exclamation-circle" style="font-size: 55px; color: #1b4444;"></i>
+                        <p class="gap-txt-head">Severity and Spread Calculation </p>
+                        <p class="gap-txt">Through the system, users will gain an understanding of the severity of their
+                            defect. Users can make informed decisions about the
+                            necessary actions and remedies if the severity of the defect is clearly assessed. This
+                            knowledge
+                            will enable them to effectively prioritise and address the defect, whether minor adjustments
+                            or
+                            more extensive corrective measures are required. It enables users to take appropriate steps
+                            and
+                            efficiently allocate resources to resolve the defect in a timely manner.</p>
+                    </div>
+                    <div class="text-center gap-item">
+                        <i class="fa fa-lightbulb-o" style="font-size: 55px; color: #1b4444;"></i>
+                        <p class="gap-txt-head">Solution and information</p>
+                        <p class="gap-txt">
+                            The system will provide users with a comprehensive set of solutions and countermeasures to
+                            address tomato crop issues.Furthermore, the system will be a valuable resource, providing
+                            important insights into
+                            tomato cultivation. Users can find information on planting, watering, fertilising, and
+                            harvesting, as well as general care for their tomato plants. This comprehensive approach
+                            will
+                            provide users with the knowledge and tools they need to produce thriving, bountiful tomato
+                            harvests.
+
+
+                        </p>
+                    </div>
+                    <div class="text-center gap-item">
+                        <i class="fa fa-mobile" style="font-size: 55px; color: #1b4444;"></i>
+                        <p class="gap-txt-head">Mobile Integrated</p>
+                        <p class="gap-txt">Most implmentations that have integrated similar technologies have targeted
+                            large
+                            scale farmers and machinery. This solution is implemented to a mobile phone to make it
+                            easily
+                            accessible to any farmer</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- Research Problem -->
+    <div class="container-fluid text-center prob " style="padding-bottom: 50px;" id="problem">
+
+        <div class="container">
+            <div class="container-fluid">
+                <div class="proj-title gap-title">Research Questions</div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <ul class="qlist">
+
+                                <li>
+                                    <span class="listicon"></span><span>How to classify nutrient deficiencies of tomato
+                                        plants?</span>
+                                </li>
+                                <li>
+                                    <span class="listicon"></span><span>How to diagnose water Imbalances in tomato
+                                        plants
+                                        ?</span>
+                                </li>
+                                <li>
+                                    <span class="listicon"></span><span>How to identify burns of fertilizer over-usage
+                                        ?</span>
+                                </li>
+                                <li>
+                                    <span class="listicon"></span><span>How to determine sufficient fertilizer
+                                        amount?</span>
+                                </li>
+                                <li>
+                                    <span class="listicon"></span><span>How to determine pesticide burns?</span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="col-md-6 col-sm-12" style="display: flex;justify-content: center;">
+                            <img src="assets/vid.gif" style="width:100%"
+                                    alt="supervisor">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="proj-title gap-title">Proposed System</div>
+                        <p class="systemtxt">The proposed system answers the above questions. This was created with home
+                            backyard gardeners in mind. While
+                            there have been several systems that detect and diagnose crop issues using mobile-based
+                            platforms, they have primarily served large-scale farmers, with a focus on disease
+                            prevention
+                            and fertiliser management. However, we identified a market gap in which home gardeners face
+                            a
+                            unique set of challenges in nurturing their crops. Our proposed system fills that void by
+                            providing a comprehensive solution for enthusiasts and hobbyists.
+                        </p>
+                        <p class="systemtxt">
+                            System includes a wide range of functionalities, allowing users to address a variety of
+                            issues
+                            that can affect tomato plants. When a user notices any abnormalities or irregularities in
+                            their
+                            crops, they can simply take a picture of the affected area, whether it's the fruit or the
+                            leaf
+                            with the defect. The system will then analyse the image immediately and provide a
+                            comprehensive
+                            diagnosis of the cause and severity of the problem. Notably, the system's underlying logic
+                            is
+                            hosted in a cloud-based infrastructure, and the mobile application is built with the Flutter
+                            framework. This technology choice ensures that users, regardless of platform or device, can
+                            easily access and use the system, resulting in a consistent and user-friendly experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- research objectives -->
+
+    <div class="container-fluid text-center" style="padding-bottom:50px ;" id="obj">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="proj-title gap-title">Research Objectives</div>
+                <div class="objflow">
+                    <div class="obj-left">
+                        Classification of Nutrient deficiency
+                        <p class="objt-text">The main objective of this component is the classification of major
+                            nutrient deficiencies of the tomato plant. Through the proposed mobile application users can
+                            identify Nitrogen (N) and Phosphorus (P) deficiencies and their deficiency levels by
+                            capturing or uploading an image of the upper surface of a tomato leaf.</p>
+                    </div>
+                    <div class="obj-right">
+                        Identify the suitable amount of fertilizer based on the soil conditions.
+                        <p class="objt-text">Based on the output from the deficiency classification user can determine
+                            based on location and the results which fertilizer him/her plant requires</p>
+                    </div>
+                    <div class="obj-left">
+                        Classification of injuries due to misapplication of chemicals or over usage of fertilizers.
+                        <p class="objt-text">The main objective of this component is the identification and
+                            classification of tomato leaf burns and its severity level of the tomato plant. Through the
+                            proposed mobile application users can identify leaf burns and their severity levels by
+                            capturing or uploading an image of a tomato leaf
+                        </p>
+                    </div>
+                    <div class="obj-right">
+                        Identify water imbalances in tomato plants and its severity
+                        <p class="objt-text">The main objective of this component is to identify the contribution of
+                            microorganisms in the soil for better crop growth and identify the suitable amount of
+                            fertilizer. Must be reached several sub-objectives to achieve the proposed component’s main
+                            objective.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- research methdology -->
+
+    <div class="container-fluid text-center prob" id="methdology">
+        <div class="container" style="padding-bottom:50px ;">
+
+            <div class="proj-title gap-title">Methdology</div>
+            <div class="method-con">
+                <div class="method-col">
+                    <img src="assets/methodology.png" alt="Methodology" class="img" style="width:100%;">
+                    <div style="text-align: center; font-size: 12px; color: #333;">Figure: Methodology Logic</div>
+                </div>
+
+                <div class="method-col" style="text-align: justify;">
+                    <p>The Proposed system provides 3 main services and 1 sub service </p>
+                    <ol style="font-weight: bold;">
+                        <li>Nutrient deficiency classification
+                            <ol type="i" start="1">
+                                <li>Identify the suitable amount of fertilizer based on the soil conditions</li>
+                            </ol>
+                        </li>
+                        <li>Water-related defects identification.</li>
+                        <li>Classification of injuries due to misapplication of chemicals or over usage of fertilizers.
+
+                        </li>
+                    </ol>
+
+                    <p>
+                        The following methodology figure ilustrates how the serverside and model logic is use to provide
+                        user with simple understandable results.
+                    </p>
+                    <p>
+                        For an authenticated user, the process begins with uploading an image of a specific plant part
+                        (such as a leaf or fruit) based on the selected service. The uploaded images are transmitted to
+                        a Flask server, which employs various models falling into three categories to extract relevant
+                        information.
+
+                        The server initially validates the uploaded image. If multiple parts of the plant are detected,
+                        an algorithm is applied to determine the most defective plant part and the one most centrally
+                        positioned in the image. Once the part is identified, it is segmented using the SAM model
+                        provided by Meta.
+
+                        The segmented result is then passed through a trained YOLOv8 model to diagnose the presence and
+                        extent of any defects. This process involves determining the affected area of the plant part.
+
+                        Using the calculated areas of the plant part and the affected area, the system calculates the
+                        spread of the defect. An image is generated, highlighting the identified defect area. This image
+                        is then uploaded to Google Storage and provided to the user as part of a JSON response for their
+                        review. These results and images are also stored in Firebase for future reference.
+
+                        For users of the nutrient deficiencies service, based on the results obtained from defect
+                        detection and classification, they can further access a sub-service to determine the appropriate
+                        fertilizers to address the identified issues.
+
+                    </p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Technologies used -->
+    <div class="container-fluid text-center" style="padding-bottom: 50px;" id="tech">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="proj-title gap-title">Technologies</div>
+                <div style="width: 100%; display: flex; justify-content: center;">
+                    <div class="flex-container">
+                        <div class="flex-item "><img src="assets/techlogos/collab.png" alt="Collab Logo" class="img">
+                        </div>
+                        <div class="flex-item"><img src="assets/techlogos/vscode.png" alt="vscode Logo" class="img">
+                        </div>
+                        <div class="flex-item"><img src="assets/techlogos/flutter.png" alt="fluuter Logo" class="img">
+                        </div>
+                        <div class="flex-item"><img src="assets/techlogos/flask.png" alt="flask Logo" class="img"></div>
+                        <div class="flex-item"><img src="assets/techlogos/roboflow.png" alt="roboflow Logo" class="img">
+                        </div>
+                        <div class="flex-item"><img src="assets/techlogos/tensorflow.png" alt="tensorflow Logo"
+                                class="img">
+                        </div>
+                        <div class="flex-item"><img src="assets/techlogos/keras.png" alt="keras Logo" class="img"></div>
+                        <div class="flex-item" style=" display: flex;align-self: center;"><img
+                                src="assets/techlogos/yolo.png" alt="Collab Logo" class="img"
+                                style="object-fit: contain;">
+                        </div>
+                        <div class="flex-item"><img src="assets/techlogos/python.png" alt="python Logo" class="img">
+                        </div>
+                        <div class="flex-item" style="display:flex"><img src="assets/techlogos/meta.png" alt="meta Logo"
+                                class="img" style="object-fit: contain;"></div>
+                        <div class="flex-item"><img src="assets/techlogos/firebase.png" alt=" firebase Logo"
+                                class="img">
+                        </div>
+                        <div class="flex-item"><img src="assets/techlogos/googlecloud.png" alt="googlecloud Logo"
+                                class="img"></div>
+                        <div class="flex-item"><img src="assets/techlogos/doker.png" alt="doker Logo" class="img"></div>
+                        <div class="flex-item"><img src="assets/techlogos/ultralytics.png" alt="googlecloud Logo"
+                                class="img"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- documentation used -->
+    <div class="container-fluid text-center prob" style="padding-bottom: 50px;" id="docs">
+        <div class="container ">
+            <div class="container-fluid">
+                <div class="proj-title gap-title">Documentation</div>
+                <div style="width: 100%; display: flex; justify-content: center;">
+                    <div class="flex-containerd-docs ">
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-pdf-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Topic Assesment</div>
+                                <div class="doc-type-txt">Group</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1TNOl3gjq26mwwMU5LnNAlCMpxtmGcGRO?usp=sharing"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-pdf-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Project Charter</div>
+                                <div class="doc-type-txt">Group</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1i2edem4YqF24NAq3WmR_LX0qXfimUlbJ?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-pdf-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Project Proposal</div>
+                                <div class="doc-type-txt">Individual</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1-hZKGNEVS05JlBVZ2B5PIhnP2FSYyx_d?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-pdf-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Status Document 1</div>
+                                <div class="doc-type-txt">Individual</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1D7tijtCKk68Dlst7X81yma4oEb4ULLdL?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-pdf-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Status Document 2</div>
+                                <div class="doc-type-txt">Individual</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1O8dyXAYSrcPze7x_U3QvlOmt-0jYNfKo?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-pdf-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Research Paper</div>
+                                <div class="doc-type-txt">Group</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/13R9LmIx5xx2Kj55VCOla6l8T2s0BJsx9?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-pdf-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Final Report</div>
+                                <div class="doc-type-txt">Group / Individual</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1uefl3YusZiOwodz9Ob-kp-kz3HoUCKeK?usp=sharing"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-pdf-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Poster</div>
+                                <div class="doc-type-txt">Group</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/18JaP0nY-MQzfQkySrr6VcV1-2b3KTrEN?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- presentations used -->
+    <div class="container-fluid text-center prob" style="padding-bottom: 50px;" id="pres">
+        <div class="container ">
+            <div class="container-fluid">
+                <div class="proj-title gap-title">Documentation</div>
+                <div style="width: 100%; display: flex; justify-content: center;">
+                    <div class="flex-containerd-docs ">
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-powerpoint-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Project Proposal</div>
+                                <div class="doc-type-txt">Group</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1tCDIjHh6bXUyj2Y59amuJcGNQhZCgC3C?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-powerpoint-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Progress Presentation 1</div>
+                                <div class="doc-type-txt">Group</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1KLYzZIHbBtJectlCcPOF9fJZk7uZS-Qm?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-powerpoint-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Progress Presentation 2</div>
+                                <div class="doc-type-txt">Group</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/13F7GpdmxA0zde81U5-ROu0ONhJS7SyZ-?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                        <div class="flex-item-docs ">
+                            <div>
+                                <div style="display: flex; flex-direction:column;">
+                                    <i class="fa fa-file-powerpoint-o file-icon"></i>
+                                </div>
+                                <div class="doc-title">Final Presentation</div>
+                                <div class="doc-type-txt">Group</div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/13F7GpdmxA0zde81U5-ROu0ONhJS7SyZ-?usp=drive_link"
+                                target="_blank">
+                                <i class="fa fa-download down-icon"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- about us -->
+    <div class="container-fluid text-center" style="padding-bottom: 50px;" id="about">
+        <div class="container ">
+            <div class="container-fluid">
+                <div class="proj-title gap-title">About Us</div>
+                <div style="width: 100%; display: flex; justify-content: start;">
+                    <div class="flex-containerd-docs ">
+                        <div class="flex-item-about ">
+                            <div class="card">
+                                <img src="https://www.sliit.lk/profile/uploads/scan_image_1505805059-Ms__Sanjeevi.jpg"
+                                    alt="supervisor" class="img-avatar" style="width:100%">
+                                <div class="container">
+                                    <span class="about-us-name">Ms. Sanjeevi Chandrasiri</span>
+                                    <p class="title">Senior Lecturer</p>
+                                    <p>Information Technology View ProfileFaculty of Computing</p>
+                                    <p>.</p>
+                                    <a href="mailto:sanji.c@sliit.lk" class="btx">
+                                        Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item-about ">
+                            <div class="card">
+                                <img src="https://www.sliit.lk/profile/uploads/a.PNG" alt="co-supervisor"
+                                    class="img-avatar" style="width:100%">
+                                <div class="container">
+                                    <span class="about-us-name">
+                                        Ms. Shalini Rupasinghe</span>
+                                    <p class="title">Assistant Lecturer</p>
+                                    <p>Computer Science & Software Engineering Faculty of Computing</p>
+                                    <p>.</p>
+                                    <a href="mailto:shalini.r@sliit.lk" class="btx">
+                                        Contact
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item-about ">
+                            <div class="card">
+                                <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-541.jpg?size=338&ext=jpg&ga=GA1.1.1880011253.1699228800&semt=ais"
+                                    alt="ext-supervisor" class="img-avatar" style="width:100%">
+                                <div class="container">
+                                    <span class="about-us-name">
+                                        Mr. Priyantha
+                                        Bandara</span>
+                                    <p class="title">Agricultural
+                                        Instructor
+                                        associated with
+                                        Central province</p>
+                                    <p>.</p>
+                                    <a href="tel:+0776965013" class="btx">
+                                        Contact
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- about us -->
+    <div class="container-fluid text-center" style="padding-bottom: 50px;">
+        <div class="container ">
+            <div class="container-fluid">
+                <div style="width: 100%; display: flex; justify-content: start;">
+                    <div class="flex-containerd-docs ">
+                        <div class="flex-item-about ">
+                            <div class="card">
+                                <img src="assets/nirasha.png" alt="supervisor" class="img-avatar" style="width:100%">
+                                <div class="container">
+                                    <span class="about-us-name">Jayasiri K.C.N</span>
+                                    <p class="title">Undergraduate Software Engineering</p>
+                                    <p>Sri Lanka Institute of Information Technology</p>
+                                    <p>.</p>
+                                    <a href="mailto:sanji.c@sliit.lk" class="btx">
+                                        Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item-about ">
+                            <div class="card">
+                                <img src="assets/rivindu.png" alt="supervisor" class="img-avatar" style="width:100%">
+                                <div class="container">
+                                    <span class="about-us-name">Karunanayake K.O.R.P.</span>
+                                    <p class="title">Undergraduate Software Engineering</p>
+                                    <p>Sri Lanka Institute of Information Technology</p>
+                                    <p>.</p>
+                                    <a href="mailto:sanji.c@sliit.lk" class="btx">
+                                        Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item-about ">
+                            <div class="card">
+                                <img src="assets/abinesh.png" alt="supervisor" class="img-avatar" style="width:100%">
+                                <div class="container">
+                                    <span class="about-us-name">Abineshh U</span>
+                                    <p class="title">Undergraduate Software Engineering</p>
+                                    <p>Sri Lanka Institute of Information Technology</p>
+                                    <p>.</p>
+                                    <a href="mailto:sanji.c@sliit.lk" class="btx">
+                                        Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item-about ">
+                            <div class="card">
+                                <img src="assets/zihara.png" alt="supervisor" class="img-avatar" style="width:100%">
+                                <div class="container">
+                                    <span class="about-us-name">Zihara M.I.F.</span>
+                                    <p class="title">Undergraduate Software Engineering</p>
+                                    <p>Sri Lanka Institute of Information Technology</p>
+                                    <p>.</p>
+                                    <a href="mailto:sanji.c@sliit.lk" class="btx">
+                                        Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+<!-- contact us -->
+    <div class="container-fluid text-center prob" style="padding-bottom: 50px;" id="contact">
+        <div class="container ">
+            <div class="container-fluid">
+                <div class="proj-title gap-title">Contact Us</div>
+                <div style="width: 100%; display: flex; justify-content: start;">
+                    <div class="flex-containerd-contact ">
+                        <div class="contact-form">
+                            <form id="contact-form">
+                                <div class="input-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for "subject">Subject</label>
+                                    <input type="text" id="subject" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" required></textarea>
+                                </div>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function leanmore() {
+            console.log("frefre");
+        }
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var submitButton = document.querySelector("button[type=submit]");
+            submitButton.innerHTML = "Sending...";
+            submitButton.style.background = "#1b4444";
+            submitButton.style.color = "#c3d4d4";
+            setTimeout(function () {
+                submitButton.innerHTML = "Message Sent!";
+                submitButton.style.background = "#c3d4d4";
+                submitButton.style.color = "#1b4444";
+                document.getElementById("contact-form").reset(); // Clear form fields
+                setTimeout(function () {
+                    submitButton.innerHTML = "Submit";
+                }, 2000);
+            }, 2000);
+        });
+    </script>
 </body>
+
 </html>
